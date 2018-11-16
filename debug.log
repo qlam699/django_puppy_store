@@ -1,0 +1,246 @@
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.007) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:44:43.348045+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 44, 43, 348045, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:44:45.451909+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 44, 45, 451909, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.001) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:11.604034+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 11, 604034, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:18.690365+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 18, 690365, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:20.085578+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 20, 85578, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:20.442853+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 20, 442853, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:53.434258+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 53, 434258, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.001) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:54.328938+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 54, 328938, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.003) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:45:54.537071+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 45, 54, 537071, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.003) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:48:36.546345+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 48, 36, 546345, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.002) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.006) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T07:52:08.893774+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 7, 52, 8, 893774, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:12:43.836978+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 12, 43, 836978, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:12:48.543444+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 12, 48, 543444, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.005) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.009) 
+            SELECT c.relname, c.relkind
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid); args=None
+(0.003) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'puppies.urls' from 'D:\\pythonproject\\django-puppy-store\\puppy_store\\puppies\\urls.py'> (None:None) '^'>, <URLPattern '^api/v1/puppies/(?P<pk>[0-9]+)$' [name='get_delete_update_puppy']>], [<URLResolver <module 'puppies.urls' from 'D:\\pythonproject\\django-puppy-store\\puppy_store\\puppies\\urls.py'> (None:None) '^'>, <URLPattern '^api/v1/puppies/$' [name='get_post_puppies']>], [<URLResolver <module 'rest_framework.urls' from 'C:\\Users\\lamthieu\\Envs\\myproject\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) '^api-auth/'>], [<URLResolver <URLPattern list> (admin:admin) '^admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'rest_framework.urls' from 'C:\\Users\\lamthieu\\Envs\\myproject\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) '^api-auth/'>
+Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\core\handlers\base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\urls\resolvers.py", line 520, in resolve
+    raise Resolver404({'tried': tried, 'path': new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <module 'puppies.urls' from 'D:\\pythonproject\\django-puppy-store\\puppy_store\\puppies\\urls.py'> (None:None) '^'>, <URLPattern '^api/v1/puppies/(?P<pk>[0-9]+)$' [name='get_delete_update_puppy']>], [<URLResolver <module 'puppies.urls' from 'D:\\pythonproject\\django-puppy-store\\puppy_store\\puppies\\urls.py'> (None:None) '^'>, <URLPattern '^api/v1/puppies/$' [name='get_post_puppies']>], [<URLResolver <module 'rest_framework.urls' from 'C:\\Users\\lamthieu\\Envs\\myproject\\lib\\site-packages\\rest_framework\\urls.py'> (rest_framework:rest_framework) '^api-auth/'>], [<URLResolver <URLPattern list> (admin:admin) '^admin/'>]], 'path': ''}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 829, in _resolve_lookup
+    current = current[bit]
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 837, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 843, in _resolve_lookup
+    current = current[int(bit)]
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\lamthieu\Envs\myproject\lib\site-packages\django\template\base.py", line 850, in _resolve_lookup
+    (bit, current))  # missing attribute
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) '^admin/'>
+Not Found: /
+"GET / HTTP/1.1" 404 2444
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:55:59.984486+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 55, 59, 984486, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.007) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:56:02.631326+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 56, 2, 631326, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.004) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.003) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy" WHERE "puppies_puppy"."id" = 1; args=(1,)
+Call get one
+"GET /api/v1/puppies/1 HTTP/1.1" 200 13025
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:56:45.845791+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 56, 45, 845791, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.001) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11698
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:57:18.769263+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 57, 18, 769263, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.007) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+Call insert
+(0.003) INSERT INTO "puppies_puppy" ("name", "age", "breed", "color", "created_at", "updated_at") VALUES ('Heee', 3, 'Heee', 'White', '2018-11-16T09:57:18.817185+00:00'::timestamptz, '2018-11-16T09:57:18.817185+00:00'::timestamptz) RETURNING "puppies_puppy"."id"; args=('Heee', 3, 'Heee', 'White', datetime.datetime(2018, 11, 16, 9, 57, 18, 817185, tzinfo=<UTC>), datetime.datetime(2018, 11, 16, 9, 57, 18, 817185, tzinfo=<UTC>))
+"POST /api/v1/puppies/ HTTP/1.1" 201 11662
+(0.004) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:57:21.374699+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 57, 21, 374699, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+Call Get all
+(0.002) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy"; args=()
+"GET /api/v1/puppies/ HTTP/1.1" 200 11909
+(0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2018-11-16T09:57:34.655950+00:00'::timestamptz AND "django_session"."session_key" = 'r2hmug7u83m2cm37arfy20ot3iuavt05'); args=(datetime.datetime(2018, 11, 16, 9, 57, 34, 655950, tzinfo=<UTC>), 'r2hmug7u83m2cm37arfy20ot3iuavt05')
+(0.003) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1; args=(1,)
+(0.003) SELECT "puppies_puppy"."id", "puppies_puppy"."name", "puppies_puppy"."age", "puppies_puppy"."breed", "puppies_puppy"."color", "puppies_puppy"."created_at", "puppies_puppy"."updated_at" FROM "puppies_puppy" WHERE "puppies_puppy"."id" = 2; args=(2,)
+Call get one
+"GET /api/v1/puppies/2 HTTP/1.1" 200 13019

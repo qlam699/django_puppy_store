@@ -3,7 +3,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import Puppy
 from .serializers import PuppySerializer
-
+import logging
+logger = logging.getLogger("django")
 
 @api_view(['GET', 'DELETE', 'PUT'])
 def get_delete_update_puppy(request, pk):
@@ -14,14 +15,17 @@ def get_delete_update_puppy(request, pk):
 
     # get details of a single puppy
     if request.method == 'GET':
+        logger.debug("Call get one")
         serializer = PuppySerializer(puppy)
         return Response(serializer.data)
     # delete a single puppy
     elif request.method == 'DELETE':
+        logger.debug("Call delete")
         puppy.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
     # update details of a single puppy
     elif request.method == 'PUT':
+        logger.debug("Call update")
         serializer = PuppySerializer(puppy, data=request.data)
         if serializer.is_valid():
             serializer.save()
@@ -32,12 +36,14 @@ def get_delete_update_puppy(request, pk):
 @api_view(['GET', 'POST'])
 def get_post_puppies(request):
     # get all puppies
+    logger.debug("Call Get all")
     if request.method == 'GET':
         puppies = Puppy.objects.all()
         serializer = PuppySerializer(puppies, many=True)
         return Response(serializer.data)
     # insert a new record for a puppy
     elif request.method == 'POST':
+        logger.debug("Call insert")
         data = {
             'name': request.data.get('name'),
             'age': int(request.data.get('age')),
